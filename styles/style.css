@@ -171,9 +171,10 @@ ol {
   text-decoration: underline;
 }
 
-.search-form__checkbox-list :focus-visible {
+.search-form__checkbox:focus-visible + .search-form__pseudo-checkbox {
   outline: 1px solid #FFF;
-  outline-offset: 1px;
+  outline-offset: 2px;
+  border-color: #FFF;
 }
 
 .search-form__pseudo-checkbox {
@@ -274,6 +275,7 @@ ol {
 .content__video-card-title {
   padding-bottom: 4px;
   overflow: hidden;
+  white-space: nowrap;
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
